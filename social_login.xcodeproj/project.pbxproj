@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6348BEE41D19D075002954F3 /* Onboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637CFF2C1D19CECC00F4EAD2 /* Onboard.framework */; };
+		637CFF271D18646200F4EAD2 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CFF261D18646200F4EAD2 /* WebViewController.swift */; };
+		637CFF291D18C9F100F4EAD2 /* GoogleProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CFF281D18C9F100F4EAD2 /* GoogleProfileVC.swift */; };
+		637CFF2B1D19BDFF00F4EAD2 /* linkedinButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CFF2A1D19BDFE00F4EAD2 /* linkedinButton.png */; };
+		63A659A81D19D2B8007B63FF /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637CFF241D18617900F4EAD2 /* linkedin-sdk.framework */; };
 		63B8CFD31D17359E0027E305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8CFD21D17359E0027E305 /* AppDelegate.swift */; };
 		63B8CFD51D17359E0027E305 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8CFD41D17359E0027E305 /* ViewController.swift */; };
 		63B8CFD81D17359E0027E305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B8CFD61D17359E0027E305 /* Main.storyboard */; };
 		63B8CFDA1D17359E0027E305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B8CFD91D17359E0027E305 /* Assets.xcassets */; };
 		63B8CFDD1D17359E0027E305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B8CFDB1D17359E0027E305 /* LaunchScreen.storyboard */; };
+		63B8CFE51D173DDF0027E305 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63B8CFE41D173DDF0027E305 /* GoogleService-Info.plist */; };
+		63B8CFE91D1797E50027E305 /* social_login-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 63B8CFE61D1743B20027E305 /* social_login-Bridging-Header.h */; };
+		EAA09FFAABEF2971F1530EEB /* Pods_social_login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C1F02409952BB4C9D0CB57 /* Pods_social_login.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24C1F02409952BB4C9D0CB57 /* Pods_social_login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_social_login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		637CFF241D18617900F4EAD2 /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "linkedin-sdk.framework"; sourceTree = "<group>"; };
+		637CFF261D18646200F4EAD2 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		637CFF281D18C9F100F4EAD2 /* GoogleProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleProfileVC.swift; sourceTree = "<group>"; };
+		637CFF2A1D19BDFE00F4EAD2 /* linkedinButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linkedinButton.png; sourceTree = "<group>"; };
+		637CFF2C1D19CECC00F4EAD2 /* Onboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Onboard.framework; path = "../../../../Library/Developer/Xcode/DerivedData/social_login-gbyqidvvobkgifbqmunzrhxzyopz/Build/Products/Debug-iphonesimulator/Onboard/Onboard.framework"; sourceTree = "<group>"; };
 		63B8CFCF1D17359E0027E305 /* social_login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = social_login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B8CFD21D17359E0027E305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63B8CFD41D17359E0027E305 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +36,10 @@
 		63B8CFD91D17359E0027E305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63B8CFDC1D17359E0027E305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63B8CFDE1D17359E0027E305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B8CFE41D173DDF0027E305 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		63B8CFE61D1743B20027E305 /* social_login-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "social_login-Bridging-Header.h"; sourceTree = "<group>"; };
+		C40BB5C60847A945BFFE4510 /* Pods-social_login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social_login.release.xcconfig"; path = "Pods/Target Support Files/Pods-social_login/Pods-social_login.release.xcconfig"; sourceTree = "<group>"; };
+		D91FA9A195537769C0DE914D /* Pods-social_login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-social_login.debug.xcconfig"; path = "Pods/Target Support Files/Pods-social_login/Pods-social_login.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6348BEE41D19D075002954F3 /* Onboard.framework in Frameworks */,
+				63A659A81D19D2B8007B63FF /* linkedin-sdk.framework in Frameworks */,
+				EAA09FFAABEF2971F1530EEB /* Pods_social_login.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10A0C5F7E1ABC61D6EA91083 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				637CFF2C1D19CECC00F4EAD2 /* Onboard.framework */,
+				637CFF241D18617900F4EAD2 /* linkedin-sdk.framework */,
+				24C1F02409952BB4C9D0CB57 /* Pods_social_login.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		63B8CFC61D17359E0027E305 = {
 			isa = PBXGroup;
 			children = (
 				63B8CFD11D17359E0027E305 /* social_login */,
 				63B8CFD01D17359E0027E305 /* Products */,
+				8C12CAD78CBB8E568AFB0831 /* Pods */,
+				10A0C5F7E1ABC61D6EA91083 /* Frameworks */,
+				63B8CFE61D1743B20027E305 /* social_login-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +88,27 @@
 		63B8CFD11D17359E0027E305 /* social_login */ = {
 			isa = PBXGroup;
 			children = (
+				63B8CFE41D173DDF0027E305 /* GoogleService-Info.plist */,
 				63B8CFD21D17359E0027E305 /* AppDelegate.swift */,
 				63B8CFD41D17359E0027E305 /* ViewController.swift */,
 				63B8CFD61D17359E0027E305 /* Main.storyboard */,
+				637CFF281D18C9F100F4EAD2 /* GoogleProfileVC.swift */,
+				637CFF261D18646200F4EAD2 /* WebViewController.swift */,
 				63B8CFD91D17359E0027E305 /* Assets.xcassets */,
 				63B8CFDB1D17359E0027E305 /* LaunchScreen.storyboard */,
+				637CFF2A1D19BDFE00F4EAD2 /* linkedinButton.png */,
 				63B8CFDE1D17359E0027E305 /* Info.plist */,
 			);
 			path = social_login;
+			sourceTree = "<group>";
+		};
+		8C12CAD78CBB8E568AFB0831 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D91FA9A195537769C0DE914D /* Pods-social_login.debug.xcconfig */,
+				C40BB5C60847A945BFFE4510 /* Pods-social_login.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63B8CFE11D17359E0027E305 /* Build configuration list for PBXNativeTarget "social_login" */;
 			buildPhases = (
+				F45147D7831ACB7D8D94CE83 /* [CP] Check Pods Manifest.lock */,
 				63B8CFCB1D17359E0027E305 /* Sources */,
 				63B8CFCC1D17359E0027E305 /* Frameworks */,
 				63B8CFCD1D17359E0027E305 /* Resources */,
+				054B4AAC0DDCB375AD69A648 /* [CP] Embed Pods Frameworks */,
+				659F4B4BACFD82238263FF8B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,20 +173,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B8CFDD1D17359E0027E305 /* LaunchScreen.storyboard in Resources */,
+				63B8CFE51D173DDF0027E305 /* GoogleService-Info.plist in Resources */,
 				63B8CFDA1D17359E0027E305 /* Assets.xcassets in Resources */,
+				637CFF2B1D19BDFF00F4EAD2 /* linkedinButton.png in Resources */,
 				63B8CFD81D17359E0027E305 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		054B4AAC0DDCB375AD69A648 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-social_login/Pods-social_login-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		659F4B4BACFD82238263FF8B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-social_login/Pods-social_login-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F45147D7831ACB7D8D94CE83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		63B8CFCB1D17359E0027E305 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63B8CFE91D1797E50027E305 /* social_login-Bridging-Header.h in Sources */,
+				637CFF291D18C9F100F4EAD2 /* GoogleProfileVC.swift in Sources */,
 				63B8CFD51D17359E0027E305 /* ViewController.swift in Sources */,
 				63B8CFD31D17359E0027E305 /* AppDelegate.swift in Sources */,
+				637CFF271D18646200F4EAD2 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,23 +352,40 @@
 		};
 		63B8CFE21D17359E0027E305 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91FA9A195537769C0DE914D /* Pods-social_login.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = social_login/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.dnjiang.social-login";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "social_login-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		63B8CFE31D17359E0027E305 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C40BB5C60847A945BFFE4510 /* Pods-social_login.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = social_login/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.dnjiang.social-login";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "social_login-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -288,6 +408,7 @@
 				63B8CFE31D17359E0027E305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
