@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import Onboard
 
 class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     @IBOutlet weak var signInButton: GIDSignInButton!
     
+    @IBOutlet weak var backgroundImg: UIImageView!
     var userName : String = ""
     var userEmail : String = ""
     var pictureURL : String = ""
@@ -22,6 +22,12 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
             svc.nameVar = userName
             svc.emailVar = userEmail
             svc.profileVar = pictureURL
+            svc.displayButton = false
+        }
+        else if(segue.identifier == "LinkedInLogin") {
+            let svc = segue.destinationViewController as! WebViewController;
+            svc.shouldShow = true
+            
         }
     }
     
@@ -88,19 +94,19 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
         
     }
     //TODO change button appearance if already logged in
-    func generateOnboardingVC() -> OnboardingViewController {
-        let firstPage = OnboardingContentViewController(title: "Social Login", body: "Connect to Google and LinkedIn", image: UIImage(named: "icon"), buttonText: "Get Started") { () -> Void in
-            self.redirectToMain()
-        }
-        let onboardingVC = OnboardingViewController(backgroundImage: UIImage(named: "background"), contents: [firstPage])
-        onboardingVC.shouldFadeTransitions = true
-        onboardingVC.fadePageControlOnLastPage = true
-        onboardingVC.shouldBlurBackground = true
-        onboardingVC.allowSkipping = false
-        onboardingVC.swipingEnabled = false
-        onboardingVC.skipHandler = redirectToMain
-        return onboardingVC
-    }
+//    func generateOnboardingVC() -> OnboardingViewController {
+//        let firstPage = OnboardingContentViewController(title: "Social Login", body: "Connect to Google and LinkedIn", image: UIImage(named: "icon"), buttonText: "Get Started") { () -> Void in
+//            self.redirectToMain()
+//        }
+//        let onboardingVC = OnboardingViewController(backgroundImage: UIImage(named: "background"), contents: [firstPage])
+//        onboardingVC.shouldFadeTransitions = true
+//        onboardingVC.fadePageControlOnLastPage = true
+//        onboardingVC.shouldBlurBackground = true
+//        onboardingVC.allowSkipping = false
+//        onboardingVC.swipingEnabled = false
+//        onboardingVC.skipHandler = redirectToMain
+//        return onboardingVC
+//    }
     func redirectToMain() {
         self.dismissViewControllerAnimated(true, completion: {})
         onBoarded = true
@@ -113,9 +119,9 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().clientID = "876571922505-2diffe89v60dles5jjhpboog6s8c51ns.apps.googleusercontent.com"
         clearUserDefaults()
-        if(!onBoarded) {
-            self.presentViewController(generateOnboardingVC(), animated: false, completion: {})
-        }
+//        if(!onBoarded) {
+//            self.presentViewController(generateOnboardingVC(), animated: false, completion: {})
+//        }
         
 //        if(NSUserDefaults.standardUserDefaults().stringForKey("GoogleAccessToken") != nil) {
 //            let googleToken = NSUserDefaults.standardUserDefaults().stringForKey("GoogleAccessToken")

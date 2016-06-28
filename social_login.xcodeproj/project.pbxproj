@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6348BEE41D19D075002954F3 /* Onboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637CFF2C1D19CECC00F4EAD2 /* Onboard.framework */; };
+		6310E4F81D231EA000180E1D /* sayagata-400px.png in Resources */ = {isa = PBXBuildFile; fileRef = 6310E4F71D231E9F00180E1D /* sayagata-400px.png */; };
+		6310E4FA1D2324DF00180E1D /* Back-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 6310E4F91D2324DF00180E1D /* Back-50.png */; };
+		6310E4FC1D23258D00180E1D /* Back-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 6310E4FB1D23258D00180E1D /* Back-25.png */; };
+		6310E4FE1D2326AD00180E1D /* WebProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6310E4FD1D2326AD00180E1D /* WebProfileVC.swift */; };
+		6310E5001D232E7400180E1D /* Businessman-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 6310E4FF1D232E7400180E1D /* Businessman-25.png */; };
 		637CFF271D18646200F4EAD2 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CFF261D18646200F4EAD2 /* WebViewController.swift */; };
 		637CFF291D18C9F100F4EAD2 /* GoogleProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CFF281D18C9F100F4EAD2 /* GoogleProfileVC.swift */; };
 		637CFF2B1D19BDFF00F4EAD2 /* linkedinButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 637CFF2A1D19BDFE00F4EAD2 /* linkedinButton.png */; };
@@ -24,11 +28,15 @@
 
 /* Begin PBXFileReference section */
 		24C1F02409952BB4C9D0CB57 /* Pods_social_login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_social_login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6310E4F71D231E9F00180E1D /* sayagata-400px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sayagata-400px.png"; sourceTree = "<group>"; };
+		6310E4F91D2324DF00180E1D /* Back-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back-50.png"; sourceTree = "<group>"; };
+		6310E4FB1D23258D00180E1D /* Back-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Back-25.png"; sourceTree = "<group>"; };
+		6310E4FD1D2326AD00180E1D /* WebProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebProfileVC.swift; sourceTree = "<group>"; };
+		6310E4FF1D232E7400180E1D /* Businessman-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Businessman-25.png"; sourceTree = "<group>"; };
 		637CFF241D18617900F4EAD2 /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "linkedin-sdk.framework"; sourceTree = "<group>"; };
 		637CFF261D18646200F4EAD2 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		637CFF281D18C9F100F4EAD2 /* GoogleProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleProfileVC.swift; sourceTree = "<group>"; };
 		637CFF2A1D19BDFE00F4EAD2 /* linkedinButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linkedinButton.png; sourceTree = "<group>"; };
-		637CFF2C1D19CECC00F4EAD2 /* Onboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Onboard.framework; path = "../../../../Library/Developer/Xcode/DerivedData/social_login-gbyqidvvobkgifbqmunzrhxzyopz/Build/Products/Debug-iphonesimulator/Onboard/Onboard.framework"; sourceTree = "<group>"; };
 		63B8CFCF1D17359E0027E305 /* social_login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = social_login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B8CFD21D17359E0027E305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63B8CFD41D17359E0027E305 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6348BEE41D19D075002954F3 /* Onboard.framework in Frameworks */,
 				63A659A81D19D2B8007B63FF /* linkedin-sdk.framework in Frameworks */,
 				EAA09FFAABEF2971F1530EEB /* Pods_social_login.framework in Frameworks */,
 			);
@@ -59,7 +66,6 @@
 		10A0C5F7E1ABC61D6EA91083 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				637CFF2C1D19CECC00F4EAD2 /* Onboard.framework */,
 				637CFF241D18617900F4EAD2 /* linkedin-sdk.framework */,
 				24C1F02409952BB4C9D0CB57 /* Pods_social_login.framework */,
 			);
@@ -92,9 +98,14 @@
 				63B8CFD21D17359E0027E305 /* AppDelegate.swift */,
 				63B8CFD41D17359E0027E305 /* ViewController.swift */,
 				63B8CFD61D17359E0027E305 /* Main.storyboard */,
+				6310E4FD1D2326AD00180E1D /* WebProfileVC.swift */,
 				637CFF281D18C9F100F4EAD2 /* GoogleProfileVC.swift */,
 				637CFF261D18646200F4EAD2 /* WebViewController.swift */,
+				6310E4F91D2324DF00180E1D /* Back-50.png */,
+				6310E4FF1D232E7400180E1D /* Businessman-25.png */,
+				6310E4FB1D23258D00180E1D /* Back-25.png */,
 				63B8CFD91D17359E0027E305 /* Assets.xcassets */,
+				6310E4F71D231E9F00180E1D /* sayagata-400px.png */,
 				63B8CFDB1D17359E0027E305 /* LaunchScreen.storyboard */,
 				637CFF2A1D19BDFE00F4EAD2 /* linkedinButton.png */,
 				63B8CFDE1D17359E0027E305 /* Info.plist */,
@@ -172,11 +183,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6310E4FA1D2324DF00180E1D /* Back-50.png in Resources */,
+				6310E5001D232E7400180E1D /* Businessman-25.png in Resources */,
 				63B8CFDD1D17359E0027E305 /* LaunchScreen.storyboard in Resources */,
 				63B8CFE51D173DDF0027E305 /* GoogleService-Info.plist in Resources */,
+				6310E4FC1D23258D00180E1D /* Back-25.png in Resources */,
 				63B8CFDA1D17359E0027E305 /* Assets.xcassets in Resources */,
 				637CFF2B1D19BDFF00F4EAD2 /* linkedinButton.png in Resources */,
 				63B8CFD81D17359E0027E305 /* Main.storyboard in Resources */,
+				6310E4F81D231EA000180E1D /* sayagata-400px.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B8CFE91D1797E50027E305 /* social_login-Bridging-Header.h in Sources */,
+				6310E4FE1D2326AD00180E1D /* WebProfileVC.swift in Sources */,
 				637CFF291D18C9F100F4EAD2 /* GoogleProfileVC.swift in Sources */,
 				63B8CFD51D17359E0027E305 /* ViewController.swift in Sources */,
 				63B8CFD31D17359E0027E305 /* AppDelegate.swift in Sources */,

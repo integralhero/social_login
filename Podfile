@@ -6,7 +6,7 @@ target 'social_login' do
   use_frameworks!
 
   # Pods for social_login
-  	pod 'Bolts'
+  	# pod 'Bolts'
 	pod 'Google/SignIn'
-	pod 'Onboard'
+	# pod 'Onboard'
 end

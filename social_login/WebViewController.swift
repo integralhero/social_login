@@ -19,7 +19,7 @@ class WebViewController: UIViewController, UIWebViewDelegate {
     var profURLVar : String?
     var profPhotoVar : String?
     var headerVar : String?
-    
+    var shouldShow = false
     // MARK: Constants
     
     let linkedInKey = "75ak3vqwy3u1uo"
@@ -34,9 +34,18 @@ class WebViewController: UIViewController, UIWebViewDelegate {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        webView.delegate = self
         
-        startAuthorization()
+        webView.delegate = self
+        if(!shouldShow) {
+            self.dismissViewControllerAnimated(false, completion: nil)
+        }
+        else {
+            startAuthorization()
+        }
+        
+    }
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
     
     override func didReceiveMemoryWarning() {
@@ -176,6 +185,7 @@ class WebViewController: UIViewController, UIWebViewDelegate {
                     self.profPhotoVar = dataDictionary["pictureUrl"] as! String
                     self.headerVar = dataDictionary["headline"] as! String
                     dispatch_async(dispatch_get_main_queue(), {
+                        self.shouldShow = false
                         self.performSegueWithIdentifier("ShowProfile", sender: nil)
                     })
                 }
@@ -194,7 +204,7 @@ class WebViewController: UIViewController, UIWebViewDelegate {
             svc.emailVar = self.headerVar
             svc.profileVar = self.profPhotoVar
             svc.profileUrlVar = self.profURLVar
-            
+            svc.displayButton = true
         }
     }
     // MARK: UIWebViewDelegate Functions
